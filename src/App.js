@@ -7,7 +7,7 @@ import Profile from './Profile'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <a
           className="App-link"
@@ -15,13 +15,21 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Component
+         Component 
         </a> 
 
-      <Home/>*/}
+      <Home/>
       <Profile text="Function Profile Component"/>
 
-      </header>
+      </header> */}
+      {
+          React.createElement(
+          'h1',
+          null,
+          'Hello JSX'
+        )
+      }
+
     </div>
   );
 }
