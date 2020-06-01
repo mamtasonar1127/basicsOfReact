@@ -16,10 +16,10 @@ function App() {
           rel="noopener noreferrer"
         >
          Component
-        </a> */}
+        </a> 
 
-        <Home/>
-        <Profile/>
+      <Home/>*/}
+      <Profile text="Function Profile Component"/>
 
       </header>
     </div>
