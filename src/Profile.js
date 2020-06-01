@@ -54,31 +54,51 @@ import React from 'react'
 
 //State Example
 
-export default class Profile  extends React.Component{
+// export default class Profile  extends React.Component{
     
-    constructor()
+//     constructor()
+//     {
+//         super()
+//         this.state={
+//             name:'mamta',
+//             email:'mamta@gmail.com',
+//             count:0
+//         }
+//     }
+    
+//     updateState(){
+//         this.setState({
+//            name: 'Sonar' ,
+//            count:this.state.count+1
+//         })
+//     }
+//     render(){
+//         return(
+//             <div>
+//             <h1>Count {this.state.count}</h1>
+//             <h1>Email {this.state.email}</h1>
+//             <button onClick={()=>{this.updateState()}}>Update name</button>
+//             </div>
+//         )
+//     }
+// }
+
+
+export default class Profile extends React.Component{
+
+    testFun()
     {
-        super()
-        this.state={
-            name:'mamta',
-            email:'mamta@gmail.com',
-            count:0
-        }
+        alert("test")
     }
-    
-    updateState(){
-        this.setState({
-           name: 'Sonar' ,
-           count:this.state.count+1
-        })
-    }
-    render(){
+
+    render()
+    {
         return(
             <div>
-            <h1>Count {this.state.count}</h1>
-            <h1>Email {this.state.email}</h1>
-            <button onClick={()=>{this.updateState()}}>Update name</button>
+                <h1>Profile</h1>
+                <button onClick={()=>this.testFun()}>click me</button>
             </div>
         )
     }
+
 }
