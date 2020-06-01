@@ -1,18 +1,26 @@
 import React from 'react';
-import Profile from './Profile'
 
-function App() {
-  return (
-    <div>
-       {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-       <Profile text={{name:'mamta'}}/>
-      </header>
-       */} 
-       <Profile />
-    </div>
-  );
+
+class App extends React.Component {
+  constructor()
+  {
+    super();
+    this.state={
+      show:true
+    }
+  }
+  render(){
+    return(
+      <div>
+      {
+        this.state.show?
+        <h1>Hide and Show</h1>
+        :null
+      }
+        <button onClick= {() => {this.setState({show:!this.state.show})}}> Toggle me</button>
+      </div>
+    );
+  }
 }
 
 export default App;
